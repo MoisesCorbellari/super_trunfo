@@ -1,79 +1,69 @@
-# Desafio: nível novato
-## Criando as Cartas do Super Trunfo
+# Super Trunfo - Cartas de Cidades
 
+Este projeto implementa um jogo de **Super Trunfo** utilizando cartas representando cidades. As cartas são formadas por informações como o estado, código, nome da cidade, população, área, PIB e pontos turísticos.
 
-Neste primeiro nível, seu objetivo é construir a base do nosso jogo Super Trunfo de Países: um sistema para cadastrar as cartas com informações sobre as cidades. Você vai praticar a leitura de dados do usuário, o armazenamento em variáveis e a exibição dessas informações na tela.
+## Funcionalidade
+O programa permite ao usuário inserir dados para duas cartas, cada uma representando uma cidade. Depois de inserir os dados, o programa exibe as informações de cada carta de maneira organizada.
 
+### **Estrutura de Dados**
+O código usa variáveis individuais para armazenar informações de cada cidade, como estado, código, nome, população, área, PIB e pontos turísticos. Além disso, o nome da cidade é lido utilizando `fgets()`, que permite capturar strings com espaços.
 
-## O que você vai fazer:
-- Criar um programa em C que permita ao usuário inserir os dados de duas cartas do Super Trunfo. Para cada carta, o usuário deverá fornecer as seguintes informações:
+## Como Executar
 
-- Estado: Uma letra de 'A' a 'H' (representando um dos oito estados). Tipo: char
- 
-- Código da Carta: A letra do estado seguida de um número de 01 a 04 (ex: A01, B03). Tipo: char[] (um array de caracteres, ou string)
- 
-- Nome da Cidade: O nome da cidade. Tipo: char[] (string)
- 
-- População: O número de habitantes da cidade. Tipo: int
- 
-- Área (em km²): A área da cidade em quilômetros quadrados. Tipo: float
- 
-- PIB: O Produto Interno Bruto da cidade. Tipo: float
- 
-- Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade. Tipo: int
- 
-Após o usuário inserir os dados de cada carta, seu programa deve exibir na tela as informações cadastradas, de forma organizada e legível. Para cada carta, imprima cada informação em uma linha separada, com uma descrição clara. Por exemplo:
-```plaintext
-Carta 1:
+### **Pré-requisitos**
+- Compilador C (como GCC)
 
-Estado: A
-
-Código: A01
-
-Nome da Cidade: São Paulo
-
-População: 12325000
-
-Área: 1521.11 km²
-
-PIB: 699.28 bilhões de reais
-
-Número de Pontos Turísticos: 50
-==============================================
-Carta 2:
-
-Estado: B
-
-Código: B02
-
-Nome da Cidade: Rio de Janeiro
-
-População: 6748000
-
-Área: 1200.25 km²
-
-PIB: 300.50 bilhões de reais
-
-Número de Pontos Turísticos: 30    
+### **Compilação e Execução**
+1. Clone este repositório ou copie o código fornecido para um arquivo `.c`.
+2. Compile o código utilizando o comando:
+```bash
+gcc -o super_trunfo super_trunfo.c
+```
+3. Execute o programa gerado:
+```bash
+./super_trunfo
 ```
 
-## Requisitos funcionais
-- O programa deve ler corretamente os dados de duas cartas do usuário via entrada padrão (teclado).
- 
-- O programa deve armazenar os dados lidos em variáveis apropriadas.
- 
-- O programa deve exibir os dados de cada carta na tela, formatados de forma clara e organizada, conforme o exemplo acima.
+### **Fluxo de Entrada**
+- O programa pedirá ao usuário para inserir os dados das duas cartas:
 
-## Requisitos não funcionais
-- Usabilidade: O programa deve ser fácil de usar, com instruções claras para o usuário.
- 
-- Legibilidade: O código deve ser bem indentado, com comentários explicativos e nomes de variáveis significativos, facilitando a leitura e compreensão.
- 
-- Corretude: O programa deve funcionar corretamente, sem erros de compilação ou execução.
+1. Letra do estado da cidade (A-H)
+2. Código da carta (ex: A01)
+3. Nome da cidade
+4. População
+5. Área da cidade
+6. PIB da cidade
+7. Pontos turísticos
 
-## Simplificações para o desafio
-- Você só precisa implementar o cadastro e a exibição de **duas** cartas.
+- Exemplo de Entrada:
+```bash
+Digite a letra do primeiro estado(A-H): A
+Digite o código da primeira carta (EX: A01): A01
+Digite o nome da cidade da primeira carta: São Paulo
+Digite a população da primeira carta: 12300000
+Digite a área da primeira carta: 1521.10
+Digite o PIB da primeira carta: 2100000.50
+Digite os pontos turísticos da primeira carta: 30
+```
+- Exemplo de Saída:
+```bash
+========= Carta 1 =========
 
-- Neste nível, foque apenas na leitura, armazenamento e exibição das informações. Você não precisa implementar nenhuma lógica de comparação entre as cartas ou qualquer outro recurso adicional.
+Estado: A
+Código: A01
+Cidade: São Paulo
+População: 12300000
+Área: 1521.10
+PIB: 2100000.50
+Pontos Turísticos: 30
 
-- Não utilize estruturas de repetição (como for ou while) ou estruturas de decisão (como if ou else). Seu código deve ser uma sequência simples de instruções.
+========= Carta 2 =========
+
+Estado: B
+Código: B02
+Cidade: Rio de Janeiro
+População: 6748000
+Área: 1200.50
+PIB: 1300000.00
+Pontos Turísticos: 50
+```
