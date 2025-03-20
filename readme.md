@@ -3,15 +3,15 @@
 Este projeto implementa um jogo de **Super Trunfo** utilizando cartas representando cidades. As cartas são formadas por informações como o estado, código, nome da cidade, população, área, PIB e pontos turísticos, calculando automáticamente a densidade populacional e PIB per capita.
 
 ## Funcionalidade
-✅ Estado
-✅ Código da carta
-✅ Nome da cidade
-✅ População
-✅ Área da cidade
-✅ PIB da cidade
-✅ Pontos turísticos
-✅ Densidade Populacional (habitantes por km²)
-✅ PIB per capita
+- Estado
+- Código da carta
+- Nome da cidade
+- População
+- Área da cidade
+- PIB da cidade
+- Pontos turísticos
+- Densidade Populacional (habitantes por km²)
+- PIB per capita
 
 ### **Estrutura de Dados**
 - O código usa variáveis individuais para armazenar as informações das cidades.
