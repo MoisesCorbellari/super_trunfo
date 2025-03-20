@@ -1,12 +1,23 @@
 # Super Trunfo - Cartas de Cidades
 
-Este projeto implementa um jogo de **Super Trunfo** utilizando cartas representando cidades. As cartas são formadas por informações como o estado, código, nome da cidade, população, área, PIB e pontos turísticos.
+Este projeto implementa um jogo de **Super Trunfo** utilizando cartas representando cidades. As cartas são formadas por informações como o estado, código, nome da cidade, população, área, PIB e pontos turísticos, calculando automáticamente a densidade populacional e PIB per capita.
 
 ## Funcionalidade
-O programa permite ao usuário inserir dados para duas cartas, cada uma representando uma cidade. Depois de inserir os dados, o programa exibe as informações de cada carta de maneira organizada.
+✅ Estado
+✅ Código da carta
+✅ Nome da cidade
+✅ População
+✅ Área da cidade
+✅ PIB da cidade
+✅ Pontos turísticos
+✅ Densidade Populacional (habitantes por km²)
+✅ PIB per capita
 
 ### **Estrutura de Dados**
-O código usa variáveis individuais para armazenar informações de cada cidade, como estado, código, nome, população, área, PIB e pontos turísticos. Além disso, o nome da cidade é lido utilizando `fgets()`, que permite capturar strings com espaços.
+- O código usa variáveis individuais para armazenar as informações das cidades.
+- O nome da cidade é lido usando fgets(), permitindo capturar strings com espaços corretamente.
+- O cálculo da Densidade Populacional é feito dividindo a população pela área.
+- O PIB per capita é calculado convertendo o PIB de bilhões para reais antes da divisão pela população.
 
 ## Como Executar
 
@@ -37,33 +48,43 @@ gcc -o super_trunfo super_trunfo.c
 
 - Exemplo de Entrada:
 ```bash
-Digite a letra do primeiro estado(A-H): A
-Digite o código da primeira carta (EX: A01): A01
+Digite a letra do primeiro estado(A-H): a
+Digite o código da primeira carta (EX: A01): a01 
 Digite o nome da cidade da primeira carta: São Paulo
-Digite a população da primeira carta: 12300000
-Digite a área da primeira carta: 1521.10
-Digite o PIB da primeira carta: 2100000.50
-Digite os pontos turísticos da primeira carta: 30
+Digite a população da primeira carta: 12325000
+Digite a área da primeira carta (km²): 1521.11
+Digite o PIB da primeira carta (em bilhôes): 699.28
+Digite os pontos turisticos da primeira carta: 50
+
+Digite a letra do segundo estado(A-H): b
+Digite o código da segunda carta (EX: A01): b02
+Digite o nome da cidade da segunda carta: Rio de Janeiro
+Digite a população da segunda carta: 6748000
+Digite a área da segunda carta (km²): 1200.25
+Digite o PIB da segunda carta (em bilhôes): 300.50
+Digite os pontos turisticos da segunda carta: 30
 ```
 - Exemplo de Saída:
 ```bash
 ========= Carta 1 =========
-
-Estado: A
-Código: A01
+Estado: a
+Código: a01
 Cidade: São Paulo
-População: 12300000
-Área: 1521.10
-PIB: 2100000.50
-Pontos Turísticos: 30
+População: 12325000
+Área: 1521.11 km²
+PIB (em bilhões): R$699.28
+Pontos Turísticos: 50
+Densidade populacional: 8102.64 hab/km²
+PIB per capita: R$56736.71 reais
 
 ========= Carta 2 =========
-
-Estado: B
-Código: B02
+Estado: b
+Código: b02
 Cidade: Rio de Janeiro
 População: 6748000
-Área: 1200.50
-PIB: 1300000.00
-Pontos Turísticos: 50
+Área: 1200.25 km²
+PIB (em bilhões): 300.50
+Pontos Turísticos: 30
+Densidade populacional: 5622.16 hab/km²
+PIB per capita: R$44531.71
 ```
