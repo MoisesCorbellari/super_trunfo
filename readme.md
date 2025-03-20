@@ -13,12 +13,6 @@ Este projeto implementa um jogo de **Super Trunfo** utilizando cartas representa
 - Densidade Populacional (habitantes por km²)
 - PIB per capita
 
-### **Estrutura de Dados**
-- O código usa variáveis individuais para armazenar as informações das cidades.
-- O nome da cidade é lido usando fgets(), permitindo capturar strings com espaços corretamente.
-- O cálculo da Densidade Populacional é feito dividindo a população pela área.
-- O PIB per capita é calculado convertendo o PIB de bilhões para reais antes da divisão pela população.
-
 ## Como Executar
 
 ### **Pré-requisitos**
