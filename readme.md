@@ -1,8 +1,8 @@
-# Super Trunfo - Cartas de Cidades
+# Super Trunfo - Cidades
 
-Este projeto implementa um jogo de **Super Trunfo** utilizando cartas representando cidades. As cartas são formadas por informações como o estado, código, nome da cidade, população, área, PIB e pontos turísticos, calculando automáticamente a densidade populacional e PIB per capita.
+Este projeto implementa um jogo de **Super Trunfo** utilizando cartas que representam cidades. As cartas possuem atributos como estado, código, nome da cidade, população, área, PIB e pontos turísticos. O jogo calcula automaticamente a densidade populacional e o PIB per capita, determinando ao final qual carta vence com base em critérios específicos.
 
-## Funcionalidade
+## 🚀 Funcionalidades
 - Estado
 - Código da carta
 - Nome da cidade
@@ -10,75 +10,85 @@ Este projeto implementa um jogo de **Super Trunfo** utilizando cartas representa
 - Área da cidade
 - PIB da cidade
 - Pontos turísticos
-- Densidade Populacional (habitantes por km²)
-- PIB per capita
+- **Densidade populacional** (habitantes por km²)
+- **PIB per capita**
+- **Super Poder:** Critério de vitória baseado nos atributos
 
-## Como Executar
+## 📌 Critérios de Vitória
+Cada atributo tem uma regra específica para determinar a carta vencedora:
 
-### **Pré-requisitos**
-- Compilador C (como GCC)
+| **Atributo**            | **Critério de Vitória** |
+|-------------------------|------------------------|
+| **População**          | Maior vence            |
+| **Área**               | Maior vence            |
+| **PIB**                | Maior vence            |
+| **Pontos Turísticos**  | Maior vence            |
+| **PIB per Capita**     | Maior vence            |
+| **Densidade Populacional** | Menor vence |
 
-### **Compilação e Execução**
-1. Clone este repositório ou copie o código fornecido para um arquivo `.c`.
-2. Compile o código utilizando o comando:
-```bash
-gcc -o super_trunfo super_trunfo.c
-```
-3. Execute o programa gerado:
-```bash
-./super_trunfo
-```
+---
 
-### **Fluxo de Entrada**
-- O programa pedirá ao usuário para inserir os dados das duas cartas:
-
+## 📥 Entrada do Usuário
+O programa solicita ao usuário os seguintes dados para as duas cartas:
 1. Letra do estado da cidade (A-H)
 2. Código da carta (ex: A01)
 3. Nome da cidade
 4. População
 5. Área da cidade
-6. PIB da cidade
+6. PIB da cidade (em bilhões)
 7. Pontos turísticos
 
-- Exemplo de Entrada:
+### **Exemplo de Entrada:**
 ```bash
-Digite a letra do primeiro estado(A-H): a
-Digite o código da primeira carta (EX: A01): a01 
-Digite o nome da cidade da primeira carta: São Paulo
-Digite a população da primeira carta: 12325000
-Digite a área da primeira carta (km²): 1521.11
-Digite o PIB da primeira carta (em bilhôes): 699.28
-Digite os pontos turisticos da primeira carta: 50
+Digite a letra do primeiro estado(A-H): A
+Digite o código da primeira carta (EX: A01): A01
+Digite o nome da cidade da primeira carta: Rio de Janeiro
+Digite a população da primeira carta: 875005
+Digite a área da primeira carta (km²): 89742.20
+Digite o PIB da primeira carta (em bilhões): 985.22
+Digite os pontos turísticos da primeira carta: 62
 
-Digite a letra do segundo estado(A-H): b
-Digite o código da segunda carta (EX: A01): b02
-Digite o nome da cidade da segunda carta: Rio de Janeiro
-Digite a população da segunda carta: 6748000
-Digite a área da segunda carta (km²): 1200.25
-Digite o PIB da segunda carta (em bilhôes): 300.50
-Digite os pontos turisticos da segunda carta: 30
+Digite a letra do segundo estado(A-H): B
+Digite o código da segunda carta (EX: A01): B02
+Digite o nome da cidade da segunda carta: São Paulo
+Digite a população da segunda carta: 985403
+Digite a área da segunda carta (km²): 36521.73
+Digite o PIB da segunda carta (em bilhões): 823.92
+Digite os pontos turísticos da segunda carta: 36
 ```
-- Exemplo de Saída:
+
+---
+
+## 📤 Saída do Programa
+### **Exemplo de Saída:**
 ```bash
 ========= Carta 1 =========
-Estado: a
-Código: a01
-Cidade: São Paulo
-População: 12325000
-Área: 1521.11 km²
-PIB (em bilhões): R$699.28
-Pontos Turísticos: 50
-Densidade populacional: 8102.64 hab/km²
-PIB per capita: R$56736.71 reais
+Estado: A
+Código: A01
+Cidade: Rio de Janeiro
+População: 875005
+Área: 89742.20 km²
+PIB (em bilhões): R$985.22
+Pontos Turísticos: 62
+Densidade populacional: 9.75 hab/km²
+PIB per capita: R$1125959.25
 
 ========= Carta 2 =========
-Estado: b
-Código: b02
-Cidade: Rio de Janeiro
-População: 6748000
-Área: 1200.25 km²
-PIB (em bilhões): 300.50
-Pontos Turísticos: 30
-Densidade populacional: 5622.16 hab/km²
-PIB per capita: R$44531.71
+Estado: B
+Código: B02
+Cidade: São Paulo
+População: 985403
+Área: 36521.73 km²
+PIB (em bilhões): R$823.92
+Pontos Turísticos: 36
+Densidade populacional: 26.98 hab/km²
+PIB per capita: R$836124.88
+
+========= Comparação de cartas =========
+População: Carta 2 venceu (0)
+Área: Carta 1 venceu (1)
+PIB: Carta 1 venceu (1)
+Pontos Turísticos: Carta 1 venceu (1)
+PIB per Capita: Carta 1 venceu (1)
+Densidade: Carta 1 venceu  (1 menor densidade populacional)
 ```
