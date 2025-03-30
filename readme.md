@@ -1,6 +1,6 @@
 # Super Trunfo - Cidades
 
-Este projeto implementa um jogo de **Super Trunfo** utilizando cartas que representam cidades. As cartas possuem atributos como estado, código, nome da cidade, população, área, PIB e pontos turísticos. O jogo calcula automaticamente a densidade populacional e o PIB per capita, determinando ao final qual carta vence com base em critérios específicos.
+Este desafio implementa um jogo de **Super Trunfo** utilizando cartas que representam cidades. As cartas possuem atributos como estado, código, nome da cidade, população, área, PIB e pontos turísticos. O jogo calcula automaticamente a densidade populacional e o PIB per capita (importando a função `src/superpoder.h`), determinando ao final qual carta vence com base em critérios específicos.
 
 ## 🚀 Funcionalidades
 - Estado
@@ -85,10 +85,10 @@ Densidade populacional: 26.98 hab/km²
 PIB per capita: R$836124.88
 
 ========= Comparação de cartas =========
-População: Carta 2 venceu (0)
-Área: Carta 1 venceu (1)
-PIB: Carta 1 venceu (1)
-Pontos Turísticos: Carta 1 venceu (1)
-PIB per Capita: Carta 1 venceu (1)
-Densidade: Carta 1 venceu  (1 menor densidade populacional)
+População: Carta 2 venceu
+Área: Carta 1 venceu
+PIB: Carta 1 venceu
+Pontos Turísticos: Carta 1 venceu
+PIB per Capita: Carta 1 venceu
+Densidade: Carta 1 venceu
 ```
