@@ -43,7 +43,7 @@ Este projeto implementa um jogo estilo Super Trunfo, onde cada carta representa 
 - Após a entrada dos dados, o jogador escolhe qual atributo deseja usar na comparação.
 
 # 💡 Exemplo de Entrada:
-======================================================= Carta 1 =======================================================
+==================== Carta 1 ====================
 - Digite o pais da primeira carta: Brasil
 - Digite a letra do primeiro estado(A-H): A
 - Digite o código da primeira carta (EX: A01): A01
@@ -53,7 +53,7 @@ Este projeto implementa um jogo estilo Super Trunfo, onde cada carta representa 
 - Digite o PIB da primeira carta (em bilhôes): 985.22
 - Digite os pontos turisticos da primeira carta: 62
 
-======================================================= Carta 2 =======================================================
+==================== Carta 2 ====================
 - Digite o pais da segunda carta: Brasil
 - Digite a letra do segundo estado(A-H): B
 - Digite o código da segunda carta (EX: A01): B02
