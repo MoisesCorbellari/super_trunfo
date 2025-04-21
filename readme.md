@@ -119,7 +119,7 @@ Pontos Turísticos: -> Rio de Janeiro venceu
 
 ---
 
-## 🧠 Observações Técnicas
+## 🧠 Observações
 
 - O atributo **Densidade Demográfica** é o único em que o menor valor vence.
 - O **Super Poder** é uma fórmula composta, implementada externamente na biblioteca `superpoder.h`.
@@ -128,7 +128,7 @@ Pontos Turísticos: -> Rio de Janeiro venceu
 
 ---
 
-## 📁 Organização do Projeto
+## 📁 Organização
 
 ```
 📦 Projeto Super Trunfo
