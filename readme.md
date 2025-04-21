@@ -134,8 +134,9 @@ Pontos Turísticos: -> Rio de Janeiro venceu
 📦 Projeto Super Trunfo
  ┣ 📂 src/
  ┃ ┗ 📄 superpoder.h  # Lógica de cálculo do Super Poder
- ┣ 📄 main.c          # Código principal do jogo
  ┣ 📄 README.md       # Documentação do projeto
+ ┣ 📄 super_tunfo     # Executável
+ ┣ 📄 super_trunfo.c  # Código principal do jogo
 ```
 
 ---
