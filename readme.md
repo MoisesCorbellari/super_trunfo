@@ -131,7 +131,7 @@ Pontos Turísticos: -> Rio de Janeiro venceu
 ## 📁 Organização
 
 ```
-📦 Projeto Super Trunfo
+📦 Super Trunfo
  ┣ 📂 src/
  ┃ ┗ 📄 superpoder.h  # Lógica de cálculo do Super Poder
  ┣ 📄 README.md       # Documentação do projeto
